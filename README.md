@@ -231,9 +231,19 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Related Projects
 
-- [3D-Reconstruction-Toolkit](https://github.com/example/3d-reconstruction-toolkit)
-- [Packaging-Optimization-Library](https://github.com/example/packaging-optimization)
-- [LLM-Design-Assistant](https://github.com/example/llm-design-assistant)
+- 3D-Reconstruction-Toolkit (will be linked later...)
+- Packaging-Optimization-Library (will be linked later...)
+- LLM-Design-Assistant (will be linked later...)
+
+> **Note:** These complementary projects are currently under development and will be linked when they become publicly available.
+
+## 🔬 External Datasets and Resources
+
+The project leverages or is compatible with the following external resources:
+
+- [NVIDIA DynPose-100K](https://huggingface.co/datasets/nvidia/dynpose-100k) - A large-scale dataset containing 100K+ human poses that can be utilized for ergonomic packaging design and human-product interaction analysis
+- [Open3D](http://www.open3d.org/) - Open-source library for 3D data processing
+- [OpenAI API](https://openai.com/api/) - For LLM-based design recommendations
 
 ## 📚 Citation
 
