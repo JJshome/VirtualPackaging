@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes pulse {
+      0% { opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { opacity: 0.7; }
+    }
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+    .rotate {
+      animation: rotate 20s linear infinite;
+      transform-origin: center;
+    }
+    .pulse {
+      animation: pulse 2s ease-in-out infinite;
+    }
+  </style>
+  
+  <!-- Background Circle -->
+  <circle cx="150" cy="150" r="145" fill="#f9f9f9" stroke="#3B82F6" stroke-width="3"/>
+  
+  <!-- Rotating Gear -->
+  <g class="rotate">
+    <path d="M150,70 L156,85 L172,85 L162,95 L165,110 L150,100 L135,110 L138,95 L128,85 L144,85 Z" fill="#3B82F6" fill-opacity="0.7"/>
+    <path d="M150,190 L156,205 L172,205 L162,215 L165,230 L150,220 L135,230 L138,215 L128,205 L144,205 Z" fill="#3B82F6" fill-opacity="0.7"/>
+    <path d="M70,150 L85,156 L85,172 L95,162 L110,165 L100,150 L110,135 L95,138 L85,128 L85,144 Z" fill="#3B82F6" fill-opacity="0.7"/>
+    <path d="M190,150 L205,156 L205,172 L215,162 L230,165 L220,150 L230,135 L215,138 L205,128 L205,144 Z" fill="#3B82F6" fill-opacity="0.7"/>
+  </g>
+  
+  <!-- 3D Box floating -->
+  <g class="float">
+    <!-- Bottom face -->
+    <polygon points="150,170 110,150 150,130 190,150" fill="#10B981" fill-opacity="0.7"/>
+    <!-- Left face -->
+    <polygon points="110,150 110,110 150,90 150,130" fill="#3B82F6" fill-opacity="0.8"/>
+    <!-- Right face -->
+    <polygon points="150,130 150,90 190,110 190,150" fill="#6366F1" fill-opacity="0.9"/>
+    
+    <!-- AI circuit pattern -->
+    <g class="pulse">
+      <path d="M150,130 L165,115 M150,130 L135,115" stroke="#FFFFFF" stroke-width="1.5"/>
+      <path d="M130,110 L145,105 M170,110 L155,105" stroke="#FFFFFF" stroke-width="1.5"/>
+      <circle cx="150" cy="100" r="3" fill="#FFFFFF"/>
+    </g>
+  </g>
+  
+  <!-- Text Elements -->
+  <text x="150" y="240" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1E3A8A">VirtualPackaging</text>
+  <text x="150" y="260" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#4B5563">AI-Powered Package Design</text>
+</svg>
