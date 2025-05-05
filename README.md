@@ -237,6 +237,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 > **Note:** These complementary projects are currently under development and will be linked when they become publicly available.
 
+## 🔬 External Datasets and Resources
+
+The project leverages or is compatible with the following external resources:
+
+- [NVIDIA DynPose-100K](https://huggingface.co/datasets/nvidia/dynpose-100k) - A large-scale dataset containing 100K+ human poses that can be utilized for ergonomic packaging design and human-product interaction analysis
+- [Open3D](http://www.open3d.org/) - Open-source library for 3D data processing
+- [OpenAI API](https://openai.com/api/) - For LLM-based design recommendations
+
 ## 📚 Citation
 
 If you use VirtualPackaging in your research or projects, please cite:
