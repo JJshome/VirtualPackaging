@@ -1,104 +1,65 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- Gradient definitions -->
-    <linearGradient id="captureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4e54c8" />
-      <stop offset="100%" stop-color="#8f94fb" />
-    </linearGradient>
-    <linearGradient id="intelligenceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff416c" />
-      <stop offset="100%" stop-color="#ff4b2b" />
-    </linearGradient>
-    <linearGradient id="designGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#56ab2f" />
-      <stop offset="100%" stop-color="#a8e063" />
-    </linearGradient>
-    <linearGradient id="productionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7b4397" />
-      <stop offset="100%" stop-color="#dc2430" />
-    </linearGradient>
-    
-    <!-- Arrow marker -->
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
-    </marker>
-  </defs>
-  
-  <!-- Background -->
-  <rect width="800" height="600" fill="#f8f9fa" />
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#ffffff"/>
   
   <!-- Title -->
-  <text x="400" y="50" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">VirtualPackaging Architecture</text>
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" font-weight="bold">VirtualPackaging Architecture</text>
   
-  <!-- Main modules -->
+  <!-- Module Boxes -->
   <!-- Capture Module -->
-  <g transform="translate(150, 150)">
-    <rect width="200" height="120" rx="10" ry="10" fill="url(#captureGradient)" />
-    <text x="100" y="40" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Capture Module</text>
-    <text x="100" y="70" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">3D Reconstruction</text>
-    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Image Processing</text>
-    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Volume Estimation</text>
-  </g>
+  <rect x="100" y="100" width="250" height="150" rx="10" ry="10" fill="#4285f4" opacity="0.8"/>
+  <text x="225" y="130" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">Capture Module</text>
+  <text x="225" y="160" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">3D Reconstruction</text>
+  <text x="225" y="185" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Image Processing</text>
+  <text x="225" y="210" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Volume Estimation</text>
   
   <!-- Intelligence Module -->
-  <g transform="translate(450, 150)">
-    <rect width="200" height="120" rx="10" ry="10" fill="url(#intelligenceGradient)" />
-    <text x="100" y="40" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Intelligence Module</text>
-    <text x="100" y="70" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">LLM Integration</text>
-    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Design Automation</text>
-    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Regulatory Compliance</text>
-  </g>
+  <rect x="450" y="100" width="250" height="150" rx="10" ry="10" fill="#ea4335" opacity="0.8"/>
+  <text x="575" y="130" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">Intelligence Module</text>
+  <text x="575" y="160" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">LLM Integration</text>
+  <text x="575" y="185" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Design Automation</text>
+  <text x="575" y="210" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Regulatory Compliance</text>
   
   <!-- Design Module -->
-  <g transform="translate(150, 350)">
-    <rect width="200" height="120" rx="10" ry="10" fill="url(#designGradient)" />
-    <text x="100" y="40" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Design Module</text>
-    <text x="100" y="70" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Box Generation</text>
-    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Internal Structure</text>
-    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Material Selection</text>
-  </g>
+  <rect x="100" y="350" width="250" height="150" rx="10" ry="10" fill="#34a853" opacity="0.8"/>
+  <text x="225" y="380" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">Design Module</text>
+  <text x="225" y="410" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Box Generation</text>
+  <text x="225" y="435" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Internal Structures</text>
+  <text x="225" y="460" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Material Selection</text>
   
   <!-- Production Module -->
-  <g transform="translate(450, 350)">
-    <rect width="200" height="120" rx="10" ry="10" fill="url(#productionGradient)" />
-    <text x="100" y="40" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Production Module</text>
-    <text x="100" y="70" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">CAD Export</text>
-    <text x="100" y="90" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Cost Estimation</text>
-    <text x="100" y="110" font-family="Arial, sans-serif" font-size="12" fill="white" text-anchor="middle">Manufacturing Specs</text>
-  </g>
+  <rect x="450" y="350" width="250" height="150" rx="10" ry="10" fill="#fbbc05" opacity="0.8"/>
+  <text x="575" y="380" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">Production Module</text>
+  <text x="575" y="410" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">CAD Export</text>
+  <text x="575" y="435" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Cost Estimation</text>
+  <text x="575" y="460" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Manufacturing Specs</text>
   
-  <!-- Connection lines -->
+  <!-- Connection Arrows -->
   <!-- Capture to Intelligence -->
-  <line x1="350" y1="210" x2="450" y2="210" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="350" y1="175" x2="450" y2="175" stroke="#333333" stroke-width="3"/>
+  <polygon points="440,170 450,175 440,180" fill="#333333"/>
   
   <!-- Intelligence to Design -->
-  <line x1="500" y1="270" x2="300" y2="350" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="450" y1="250" x2="350" y2="350" stroke="#333333" stroke-width="3"/>
+  <polygon points="357,341 350,350 343,341" fill="#333333"/>
   
   <!-- Capture to Design -->
-  <line x1="250" y1="270" x2="250" y2="350" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="225" y1="250" x2="225" y2="350" stroke="#333333" stroke-width="3"/>
+  <polygon points="220,340 225,350 230,340" fill="#333333"/>
   
   <!-- Design to Production -->
-  <line x1="350" y1="410" x2="450" y2="410" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="350" y1="425" x2="450" y2="425" stroke="#333333" stroke-width="3"/>
+  <polygon points="440,420 450,425 440,430" fill="#333333"/>
   
   <!-- Intelligence to Production -->
-  <line x1="550" y1="270" x2="550" y2="350" stroke="#555" stroke-width="2" marker-end="url(#arrowhead)" />
+  <line x1="575" y1="250" x2="575" y2="350" stroke="#333333" stroke-width="3"/>
+  <polygon points="570,340 575,350 580,340" fill="#333333"/>
   
-  <!-- Intelligence Module Details -->
-  <g transform="translate(100, 500)">
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Intelligence Module Components:</text>
-    <text x="20" y="25" font-family="Arial, sans-serif" font-size="14">• LLM Integration (llm.py)</text>
-    <text x="20" y="50" font-family="Arial, sans-serif" font-size="14">• Design Automation (design_automation.py)</text>
-    <text x="20" y="75" font-family="Arial, sans-serif" font-size="14">• Labeling (labeling.py)</text>
-    <text x="20" y="100" font-family="Arial, sans-serif" font-size="14">• Regulatory Compliance (regulatory.py)</text>
-  </g>
+  <!-- Intelligence Module Components -->
+  <rect x="125" y="520" width="550" height="60" rx="5" ry="5" fill="#f1f3f4" stroke="#d3d3d3"/>
+  <text x="140" y="545" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Intelligence Module Components:</text>
+  <text x="140" y="570" font-family="Arial, sans-serif" font-size="14">llm.py • design_automation.py • labeling.py • regulatory.py</text>
   
-  <!-- Web Interface & API -->
-  <g transform="translate(400, 520)">
-    <rect width="300" height="50" rx="5" ry="5" fill="#333" />
-    <text x="150" y="30" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Web Interface & API</text>
-  </g>
-  
-  <!-- Version info -->
-  <text x="790" y="590" font-family="Arial, sans-serif" font-size="10" text-anchor="end" fill="#999">v1.0</text>
+  <!-- Web Interface -->
+  <rect x="250" y="40" width="300" height="40" rx="5" ry="5" fill="#673ab7" opacity="0.8"/>
+  <text x="400" y="65" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle">Web Interface &amp; API</text>
 </svg>
