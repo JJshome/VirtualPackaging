@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="300" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes moveRight {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(15px); }
+    }
+    @keyframes pulse {
+      0% { opacity: 0.7; }
+      50% { opacity: 1; }
+      100% { opacity: 0.7; }
+    }
+    @keyframes rotateY {
+      0% { transform: rotateY(0deg); }
+      100% { transform: rotateY(360deg); }
+    }
+    @keyframes highlight {
+      0% { stroke: #9CA3AF; }
+      50% { stroke: #3B82F6; }
+      100% { stroke: #9CA3AF; }
+    }
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+    .fade-in-1 { animation: fadeIn 0.5s ease-in-out forwards; animation-delay: 0.2s; opacity: 0; }
+    .fade-in-2 { animation: fadeIn 0.5s ease-in-out forwards; animation-delay: 0.7s; opacity: 0; }
+    .fade-in-3 { animation: fadeIn 0.5s ease-in-out forwards; animation-delay: 1.2s; opacity: 0; }
+    .fade-in-4 { animation: fadeIn 0.5s ease-in-out forwards; animation-delay: 1.7s; opacity: 0; }
+    .fade-in-5 { animation: fadeIn 0.5s ease-in-out forwards; animation-delay: 2.2s; opacity: 0; }
+    .arrow { animation: moveRight 1s ease-in-out infinite alternate; }
+    .pulse { animation: pulse 2s ease-in-out infinite; }
+    .rotate-3d { animation: rotateY 8s linear infinite; transform-origin: center; }
+    .highlight { animation: highlight 2s ease-in-out infinite; }
+    .flow-line {
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      animation: dash 2s linear forwards;
+    }
+    text { font-family: Arial, sans-serif; }
+    .title { font-weight: bold; }
+    .description { font-size: 10px; }
+  </style>
+  
+  <!-- Background -->
+  <rect width="800" height="300" fill="#F8FAFC" rx="10" ry="10"/>
+  
+  <!-- Workflow Steps -->
+  <!-- Step 1: Capture -->
+  <g class="fade-in-1">
+    <circle cx="100" cy="150" r="50" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+    <g transform="translate(75, 120)">
+      <rect x="0" y="0" width="30" height="50" rx="3" ry="3" fill="#3B82F6"/>
+      <rect x="3" y="3" width="24" height="38" rx="1" ry="1" fill="#1E3A8A"/>
+      <circle cx="15" cy="15" r="7" fill="#60A5FA"/>
+    </g>
+    <text x="100" y="190" font-size="14" text-anchor="middle" class="title">Capture</text>
+    <text x="100" y="205" font-size="10" text-anchor="middle" class="description">Take product photos</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <g class="arrow fade-in-1">
+    <line x1="160" y1="150" x2="200" y2="150" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="195,145 205,150 195,155" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Step 2: 3D Reconstruction -->
+  <g class="fade-in-2">
+    <circle cx="250" cy="150" r="50" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+    <g transform="translate(250, 150)" class="rotate-3d">
+      <!-- 3D Cube representation -->
+      <line x1="-15" y1="-15" x2="15" y2="-15" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="-15" y1="15" x2="15" y2="15" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="-15" y1="-15" x2="-15" y2="15" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="15" y1="-15" x2="15" y2="15" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="-15" y1="-15" x2="-5" y2="-25" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="15" y1="-15" x2="25" y2="-25" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="15" y1="15" x2="25" y2="5" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="-15" y1="15" x2="-5" y2="5" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="-5" y1="-25" x2="25" y2="-25" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="25" y1="-25" x2="25" y2="5" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="-5" y1="5" x2="25" y2="5" stroke="#3B82F6" stroke-width="2" stroke-dasharray="2,2"/>
+      <line x1="-5" y1="-25" x2="-5" y2="5" stroke="#3B82F6" stroke-width="2" stroke-dasharray="2,2"/>
+    </g>
+    <text x="250" y="190" font-size="14" text-anchor="middle" class="title">Reconstruct</text>
+    <text x="250" y="205" font-size="10" text-anchor="middle" class="description">Generate 3D model</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <g class="arrow fade-in-2">
+    <line x1="310" y1="150" x2="350" y2="150" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="345,145 355,150 345,155" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Step 3: Package Design -->
+  <g class="fade-in-3">
+    <circle cx="400" cy="150" r="50" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+    <g class="pulse">
+      <!-- Box design -->
+      <rect x="375" y="135" width="50" height="30" fill="none" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="375" y1="135" x2="385" y2="125" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="425" y1="135" x2="435" y2="125" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="425" y1="165" x2="435" y2="155" stroke="#3B82F6" stroke-width="2"/>
+      <rect x="385" y="125" width="50" height="30" fill="none" stroke="#3B82F6" stroke-width="2"/>
+      <line x1="435" y1="125" x2="435" y2="155" stroke="#3B82F6" stroke-width="2"/>
+    </g>
+    <text x="400" y="190" font-size="14" text-anchor="middle" class="title">Design</text>
+    <text x="400" y="205" font-size="10" text-anchor="middle" class="description">Create packaging</text>
+  </g>
+  
+  <!-- Arrow 3 -->
+  <g class="arrow fade-in-3">
+    <line x1="460" y1="150" x2="500" y2="150" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="495,145 505,150 495,155" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Step 4: LLM Optimization -->
+  <g class="fade-in-4">
+    <circle cx="550" cy="150" r="50" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+    <g>
+      <!-- LLM chat representation -->
+      <rect x="530" y="130" width="40" height="40" rx="5" ry="5" fill="#DBEAFE"/>
+      <circle cx="540" cy="145" r="3" fill="#3B82F6"/>
+      <circle cx="550" cy="145" r="3" fill="#3B82F6"/>
+      <circle cx="560" cy="145" r="3" fill="#3B82F6"/>
+      <rect x="535" y="155" width="30" height="10" rx="3" ry="3" fill="#3B82F6"/>
+    </g>
+    <text x="550" y="190" font-size="14" text-anchor="middle" class="title">Optimize</text>
+    <text x="550" y="205" font-size="10" text-anchor="middle" class="description">LLM-enhanced refinement</text>
+  </g>
+  
+  <!-- Arrow 4 -->
+  <g class="arrow fade-in-4">
+    <line x1="610" y1="150" x2="650" y2="150" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="645,145 655,150 645,155" fill="#3B82F6"/>
+  </g>
+  
+  <!-- Step 5: Production Output -->
+  <g class="fade-in-5">
+    <circle cx="700" cy="150" r="50" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+    <g class="highlight">
+      <!-- Factory/CAD output -->
+      <rect x="680" y="135" width="40" height="30" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+      <path d="M680,135 L700,120 L720,135" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+      <line x1="700" y1="120" x2="700" y2="125" stroke="#9CA3AF" stroke-width="2"/>
+      <line x1="690" y1="150" x2="710" y2="150" stroke="#9CA3AF" stroke-width="2"/>
+    </g>
+    <text x="700" y="190" font-size="14" text-anchor="middle" class="title">Produce</text>
+    <text x="700" y="205" font-size="10" text-anchor="middle" class="description">Export factory files</text>
+  </g>
+  
+  <!-- Process Flow Line -->
+  <path d="M100,220 C250,260 550,260 700,220" fill="none" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" class="flow-line"/>
+  
+  <!-- Title at the top -->
+  <text x="400" y="50" font-size="24" font-weight="bold" text-anchor="middle" fill="#1E3A8A">VirtualPackaging Workflow</text>
+  <text x="400" y="75" font-size="14" text-anchor="middle" fill="#4B5563">From smartphone photos to manufacturing-ready packaging designs</text>
+</svg>
