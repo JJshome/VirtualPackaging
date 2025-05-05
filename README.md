@@ -231,9 +231,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🔗 Related Projects
 
-- [3D-Reconstruction-Toolkit](https://github.com/example/3d-reconstruction-toolkit)
-- [Packaging-Optimization-Library](https://github.com/example/packaging-optimization)
-- [LLM-Design-Assistant](https://github.com/example/llm-design-assistant)
+- 3D-Reconstruction-Toolkit (will be linked later...)
+- Packaging-Optimization-Library (will be linked later...)
+- LLM-Design-Assistant (will be linked later...)
+
+> **Note:** These complementary projects are currently under development and will be linked when they become publicly available.
 
 ## 📚 Citation
 
