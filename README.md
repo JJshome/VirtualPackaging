@@ -12,7 +12,7 @@
     <a href="#features">Features</a> •
     <a href="#architecture">Architecture</a> •
     <a href="#installation">Installation</a> •
-    <a href="#usage">Usage</a> •
+    <a href="#usage">Usage</a> • <a href="DEPLOYMENT.MD">Deployment</a> •
     <a href="#development">Development</a> •
     <a href="#license">License</a>
   </p>
@@ -125,6 +125,10 @@ cp .env.example .env
 python manage.py runserver
 ```
 
+## 🚢 Deployment
+
+For detailed deployment instructions, please see the [DEPLOYMENT.MD](DEPLOYMENT.MD) file.
+
 ### Requirements
 
 - Python 3.10+
@@ -198,21 +202,24 @@ response = requests.get(
 VirtualPackaging/
 ├── core/                     # Core application logic
 │   ├── capture/              # 3D reconstruction from images
-│   ├── analysis/             # Volume estimation and optimization
 │   ├── design/               # Packaging design generation
-│   └── production/           # Manufacturing output generation
-├── intelligence/             # AI components
-│   ├── vision/               # Computer vision models
-│   ├── llm/                  # Large language model integration
-│   └── optimization/         # Design optimization algorithms
+│   ├── intelligence/         # AI components (LLM, optimization)
+│   └── integration/          # Module integration logic
 ├── web/                      # Web application
 │   ├── frontend/             # React-based UI
-│   ├── backend/              # API services
-│   └── realtime/             # WebSocket services for live updates
-├── db/                       # Database models and migrations
-├── utils/                    # Utility functions and helpers
-├── tests/                    # Automated tests
-└── docs/                     # Documentation and examples
+│   └── api/                  # FastAPI backend services
+├── tests/                    # Automated tests for core and web modules
+├── docker/                   # Docker configurations
+├── docs/                     # Documentation and project assets
+├── examples/                 # Example scripts and use cases
+├── .env.example              # Example environment variables
+├── requirements.txt          # Python dependencies
+├── setup_env.sh              # Environment setup script
+├── docker-compose.yml        # Docker Compose configuration
+├── CONTRIBUTING.md           # Guidelines for contributors
+├── DEPLOYMENT.MD             # Deployment instructions
+├── LICENSE                   # Project license
+└── README.md                 # This file
 ```
 
 ### Contributing

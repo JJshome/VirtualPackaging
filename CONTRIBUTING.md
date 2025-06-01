@@ -107,3 +107,51 @@ This section lists the labels we use to help us track and manage issues and pull
 * `question` - Further information is requested
 
 Thank you for contributing to VirtualPackaging!
+
+## Running Tests
+
+This project uses pytest for testing. Ensure you have it installed (it's included in `requirements.txt`).
+
+To run all tests, navigate to the root directory of the project and run:
+
+```bash
+pytest
+```
+
+To run tests for a specific file:
+
+```bash
+pytest tests/core/design/test_box_generator.py
+```
+
+To run a specific test function:
+
+```bash
+pytest tests/core/design/test_box_generator.py::test_add_padding
+```
+
+Please ensure all tests pass before submitting a pull request. Add new tests for any new features or bug fixes.
+
+### Code Formatting and Linting (Python)
+
+We use **Black** for uncompromising Python code formatting and **Flake8** for linting to ensure code quality and consistency.
+
+**Configuration:**
+*   Black is configured in `pyproject.toml`.
+*   Flake8 uses default settings but can be configured in `.flake8` if needed.
+
+**Usage:**
+
+Before committing your Python changes, please format and lint your code:
+
+1.  **Format with Black:**
+    ```bash
+    black .
+    ```
+
+2.  **Lint with Flake8:**
+    ```bash
+    flake8 .
+    ```
+
+It's highly recommended to integrate these tools into your code editor for automatic formatting and linting on save.
